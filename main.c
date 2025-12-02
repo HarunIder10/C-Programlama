@@ -60,6 +60,26 @@ void basamak(){
     }
     printf("basamak sayisi: %d",sayac);
 }
+
+void basamakToplam(){
+    int sayi;
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d",&sayi);
+
+    int toplam=0;
+    int sayi2 = sayi;
+    while(sayi2>=1){
+        toplam=toplam+(sayi2%10)*(sayi2%10)*(sayi2%10);
+        sayi2 = sayi2/10;
+    }
+    if(toplam==sayi){
+        printf("basamaklari toplami esittir.");
+    }
+    else{
+        printf("Basamaklari toplami esit degildir");
+    }
+
+}
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
@@ -78,8 +98,12 @@ int main()
     // Soru4: Klavyeden girilen sayının faktöryelini hesaplayan fonksiyon yazınız.
     //Faktoryel();
 
-    // Soru5: Klavyeden girilen sayının kaç basamaklı olduğunu bulan fonskşyonu yazın
+    // Soru5: Klavyeden girilen sayının kaç basamaklı olduğunu bulan fonsksiyonu yazın.
     //basamak();
+
+    // Soru6: Klavyeden girilen 3 basamaklı bir sayının basamakları toplamanın kendisine eşit olup olmadığını bulan fonksiyonu bulunuz
+    basamakToplam();
+
 
     return 0;
 }

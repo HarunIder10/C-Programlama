@@ -201,7 +201,7 @@ int main()
     //diziYaz();
 
     // Soru12: Klavyeden girilen bir kelimenin uzunluğunu bulan fonksiyon yazınız.
-    kelimeBoyut();
+    //kelimeBoyut();
 
     return 0;
 }

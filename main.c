@@ -136,6 +136,32 @@ void Fibonacci(){
     }
 }
 
+void diziYaz(){
+    int dizi[10];
+    for(int i=0;i<10;i++){
+        printf("\n%d.elemani giriniz: ",i+1);
+        scanf("%d",&dizi[i]);
+    }
+    printf("\nDizinin elemanlari: ");
+    for(int i = 0; i < 10; i++){
+        printf("%d ", dizi[i]);   // tek tek yazdırıyoruz
+    }
+
+}
+
+void kelimeBoyut(){
+    char kelime[50];
+    printf("kelimeyi giriniz: ");
+    scanf("%s",kelime);
+    for(int i=0;i<50;i++){
+        if(kelime[i]=='\0'){
+            printf("kelime sayisi: %d",i);
+            break;
+        }
+    }
+
+}
+
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
@@ -170,6 +196,12 @@ int main()
 
     // Soru10: Fibonacci serisinin ilk 10 terimini ekrana yazan fonksiyon.
     //Fibonacci();
+
+    // Soru11: 10 elemanlı bir sayı dizisinin girişini yapan ve bunları ekrana yazdıran fonksiyonu yazınız.
+    //diziYaz();
+
+    // Soru12: Klavyeden girilen bir kelimenin uzunluğunu bulan fonksiyon yazınız.
+    kelimeBoyut();
 
     return 0;
 }

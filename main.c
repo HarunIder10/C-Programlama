@@ -162,6 +162,22 @@ void kelimeBoyut(){
 
 }
 
+void diziBuyuk(){
+    int dizi[6];
+    for(int i=0;i<6;i++){
+        printf("%d.eleman: ",i+1);
+        scanf("%d",&dizi[i]);
+    }
+    int buyuk=0;
+    for(int i=0;i<6;i++){
+        if(dizi[i]>buyuk){
+            buyuk=dizi[i];
+        }
+    }
+    printf("\ndizideki en buyuk eleman: %d",buyuk);
+
+}
+
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
@@ -202,6 +218,9 @@ int main()
 
     // Soru12: Klavyeden girilen bir kelimenin uzunluğunu bulan fonksiyon yazınız.
     //kelimeBoyut();
+
+    // Soru13: Klavyeden girilen 6 elemanlı bir sayı dizisiniz en büyük elemanını bulan fonksiyonu girin.
+    diziBuyuk();
 
     return 0;
 }

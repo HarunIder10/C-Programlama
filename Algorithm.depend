@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1764599137 source:c:\users\monster\onedrive\masaüstü\eðitilerim\embedded-software\algorithm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

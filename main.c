@@ -80,10 +80,65 @@ void basamakToplam(){
     }
 
 }
+
+void ciftTekOran(){
+    int tek=0;
+    int cift=0;
+    int sayi;
+    float oran;
+    for(int i=0;i<20;i++){
+        printf("%d. sayi: ",(i+1));
+        scanf("%d",&sayi);
+        if(sayi%2 == 0){
+            cift = cift + sayi;
+        }
+        else{
+            tek = tek + sayi;
+        }
+    }
+    if(tek == 0){
+        printf("\nHic tek sayi olmadigi icin oran hesaplanamaz!");
+        return;
+    }
+    oran = cift/tek;
+    printf("\nCift sayilarin tek sayilara orani: %.2f",oran);
+
+}
+
+void tamKare(){
+    for(int sayac=4;sayac*sayac<=1000;sayac++){
+            int kare=sayac*sayac;
+        printf("%d\n",kare);
+    }
+}
+
+void carpimTablo(){
+    for(int i=1;i<=10;i++){
+        for(int j=1;j<=10;j++){
+            printf("%d x %d = %d\n",i,j,(i*j));
+        }
+        printf("\n");
+    }
+
+}
+
+void Fibonacci(){
+    int sayi1=0;
+    int sayi2=1;
+    printf("%d\n",sayi1);
+    printf("%d\n",sayi2);
+    int toplam;
+    for(int i=0;i<8;i++){
+        toplam=sayi1+sayi2;
+        sayi1=sayi2;
+        printf("%d\n",toplam);
+        sayi2=toplam;
+    }
+}
+
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
-
     //printf("sonuc: %d \n",asalMi());
 
     // Soru2: Kendisine parametre olarak verilen bir metni (char array) ter çevirip ekrana yazan bir fonksiyon yazınız.
@@ -101,9 +156,20 @@ int main()
     // Soru5: Klavyeden girilen sayının kaç basamaklı olduğunu bulan fonsksiyonu yazın.
     //basamak();
 
-    // Soru6: Klavyeden girilen 3 basamaklı bir sayının basamakları toplamanın kendisine eşit olup olmadığını bulan fonksiyonu bulunuz
-    basamakToplam();
+    // Soru6: Klavyeden girilen 3 basamaklı bir sayının basamakları toplamanın kendisine eşit olup olmadığını bulan fonksiyonu bulunuz.
+    //basamakToplam();
 
+    // Soru7: Klavyeden girilen 20 adet sayıdan çift sayıların toplamını tek sayıların toplamına oranını bulan fonksiyonu bulunuz.
+    //ciftTekOran();
+
+    // Soru8: 10  ile 1000 arasındaki tam kare sayıları ekrana yazdıran fonksiyonu yazınız
+    //tamKare();
+
+    // Soru9: 1 den 10 olan sayıların çarpım tablosunu yazınız.
+    //carpimTablo();
+
+    // Soru10: Fibonacci serisinin ilk 10 terimini ekrana yazan fonksiyon.
+    //Fibonacci();
 
     return 0;
 }

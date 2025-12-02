@@ -193,6 +193,27 @@ void diziTers(){
     }
 }
 
+void decimalToBinary() {
+    int deger;
+    int dizi[8];
+    int i = 0;
+
+    printf("Lutfen bir sayi giriniz: ");
+    scanf("%d", &deger);
+
+    // 8 bit için hesaplama
+    for(i = 0; i < 8; i++) {
+        dizi[i] = deger % 2;
+        deger = deger / 2;
+    }
+
+    // Ters sırada yazdırma
+    printf("Binary: ");
+    for(i = 7; i >= 0; i--) {
+        printf("%d", dizi[i]);
+    }
+}
+
 
 int main()
 {
@@ -239,7 +260,10 @@ int main()
     // diziBuyuk();
 
     // Soru14: Girilen kelimeyi tersten yazan fonksiyonu yazınız.
-    diziTers();
+    // diziTers();
+
+    // Soru15: Girilen bir decimal sayıyı binary sayıya çeviren fonksiyonu yazınız.
+    decimalToBinary();
 
     return 0;
 }

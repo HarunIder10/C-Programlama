@@ -178,6 +178,22 @@ void diziBuyuk(){
 
 }
 
+void diziTers(){
+    char dizi[100];
+    gets(dizi);
+    int boyut;
+    for(int i=0;i<100;i++){
+        if(dizi[i]=='\0'){
+            boyut=i-1;
+            break;
+        }
+    }
+    for(boyut;-1<boyut;boyut--){
+        printf("%c",dizi[boyut]);
+    }
+}
+
+
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
@@ -208,19 +224,22 @@ int main()
     //tamKare();
 
     // Soru9: 1 den 10 olan sayıların çarpım tablosunu yazınız.
-    //carpimTablo();
+    // carpimTablo();
 
     // Soru10: Fibonacci serisinin ilk 10 terimini ekrana yazan fonksiyon.
-    //Fibonacci();
+    // Fibonacci();
 
     // Soru11: 10 elemanlı bir sayı dizisinin girişini yapan ve bunları ekrana yazdıran fonksiyonu yazınız.
-    //diziYaz();
+    // diziYaz();
 
     // Soru12: Klavyeden girilen bir kelimenin uzunluğunu bulan fonksiyon yazınız.
     //kelimeBoyut();
 
     // Soru13: Klavyeden girilen 6 elemanlı bir sayı dizisiniz en büyük elemanını bulan fonksiyonu girin.
-    diziBuyuk();
+    // diziBuyuk();
+
+    // Soru14: Girilen kelimeyi tersten yazan fonksiyonu yazınız.
+    diziTers();
 
     return 0;
 }

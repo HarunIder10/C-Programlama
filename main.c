@@ -243,7 +243,21 @@ void notGecme(){
     printf("%d kisi dersten gecti",sayac);
 }
 
+void bolunebilme(){
+    int dizi[10]={45,12,20,40,32,60,80,35,98,100};
+    for(int i=0;i<10;i++){
+        if(dizi[i]%20==0){
+            printf("%d ",dizi[i]);
+        }
+    }
+}
 
+void polindrom(){
+    char dizi[20];
+    printf("lutfen kelimeyi giriniz: ");
+    gets(dizi);
+
+}
 
 int main()
 {
@@ -300,6 +314,13 @@ int main()
 
     // Soru17: Bir sınıftaki 50 öğrencinin bir dersten aldıkları yıl sonu notları veriliyor.Başarı notu 50 olduğuna göre kaç öğrencinin başarılı olduğunu bulan programı yazınız.
     // notGecme();
+
+    // Soru18: 10 elemanlı bir dizinin elemanlarından hem 4'e hem de 5'e bolunen sayıları bulan programı yazınız.
+    // bolunebilme();
+
+    // Soru19: Klavyeden girilen bir  yazının polindrom olup olmadığını bulan fonksiyonu yazınız.
+
+
 
     return 0;
 }

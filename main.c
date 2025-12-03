@@ -214,6 +214,36 @@ void decimalToBinary() {
     }
 }
 
+void diziSira(){
+    int dizi[10]={5,6,8,7,2,5,9,4,1,23};
+    for(int i=0;i<10;i++){
+        printf("%d ",dizi[i]);
+    }
+    printf("\n");
+    int kucuk=dizi[0];
+    int eleman=0;
+    for(int i=0;i<10;i++){
+        if(dizi[i]<kucuk){
+            kucuk=dizi[i];
+            eleman=i;
+        }
+    }
+    printf("%d dizinin en kucuk elemani ve dizinin %d.elemanidir",kucuk,(eleman+1));
+
+}
+
+void notGecme(){
+    int notlar[25]={15,59,84,65,25,38,45,98,76,84,26,95,12,85,83,45,56,58,52,51,53,54,68,64,77};
+    int sayac=0;
+    for(int i=0;i<25;i++){
+        if(notlar[i]>=50){
+            sayac++;
+        }
+    }
+    printf("%d kisi dersten gecti",sayac);
+}
+
+
 
 int main()
 {
@@ -263,7 +293,13 @@ int main()
     // diziTers();
 
     // Soru15: Girilen bir decimal sayıyı binary sayıya çeviren fonksiyonu yazınız.
-    decimalToBinary();
+    // decimalToBinary();
+
+    // Soru16: 10 elemanlı bir sayı dizesinde en küçük elemanın dizinin kaçıncı elemanı olduğunu bulan programı yazınız.
+    // diziSira();
+
+    // Soru17: Bir sınıftaki 50 öğrencinin bir dersten aldıkları yıl sonu notları veriliyor.Başarı notu 50 olduğuna göre kaç öğrencinin başarılı olduğunu bulan programı yazınız.
+    // notGecme();
 
     return 0;
 }

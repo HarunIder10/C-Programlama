@@ -298,6 +298,15 @@ void karakterSayisi(){
     printf("\nKarakter sayisi: %d",sayac);
 }
 
+void matris(){
+    int dizi[2][3];
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            printf("\n[%d][%d]: ",i,j);
+            scanf("%d",&dizi[i][j]);
+        }
+    }
+}
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
@@ -364,8 +373,10 @@ int main()
     // tersDizi();
 
     // Soru21: Girilen cümlede, Girilen karakterden kaç tane oldğunu bulan programı yazınız.
-    karakterSayisi();
+    // karakterSayisi();
 
+    // Soru22: İki boyutlu olarak oluşturulan bir matrise matris[i,j] dışarıdan değer girilen programı yazınız.
+    matris();
 
     return 0;
 }

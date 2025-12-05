@@ -282,6 +282,22 @@ void tersDizi(){
 
 }
 
+void karakterSayisi(){
+    char dizi[20];
+    printf("kelimeyi giriniz: ");
+    gets(dizi);
+    printf("\nsayisini bulmak istediginiz karakteri giriniz: ");
+    char karakter[2];
+    scanf("%c",karakter);
+    int sayac=0;
+    for(int i=0;i<strlen(dizi);i++){
+        if(dizi[i]==karakter[0]){
+            sayac++;
+        }
+    }
+    printf("\nKarakter sayisi: %d",sayac);
+}
+
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
@@ -345,7 +361,10 @@ int main()
     // polindrom();
 
     // Soru20: Bir sayı dizisinde dizi elemanlarının sondan başa gelecek şekilde düzenlenmesini sağlayan programı yazınız.
-    tersDizi();
+    // tersDizi();
+
+    // Soru21: Girilen cümlede, Girilen karakterden kaç tane oldğunu bulan programı yazınız.
+    karakterSayisi();
 
 
     return 0;

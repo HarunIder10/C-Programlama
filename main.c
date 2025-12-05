@@ -307,6 +307,23 @@ void matris(){
         }
     }
 }
+
+void transpoze(){
+    int dizi[2][3]={{2,3,4},{6,8,9}};
+    int tpoze[3][2];
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            tpoze[j][i]=dizi[i][j];
+        }
+    }
+    for(int i=0;i<3;i++){
+        for(int j=0;j<2;j++){
+            printf("%d ",tpoze[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
@@ -376,7 +393,10 @@ int main()
     // karakterSayisi();
 
     // Soru22: İki boyutlu olarak oluşturulan bir matrise matris[i,j] dışarıdan değer girilen programı yazınız.
-    matris();
+    // matris();
+
+    // Soru23: [2x2] tipindeki bir kare matrisin transpozesini veren algoritmayı yazın.
+    transpoze();
 
     return 0;
 }

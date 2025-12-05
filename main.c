@@ -255,8 +255,8 @@ void bolunebilme(){
 void polindrom(){
     char dizi[20];
     printf("Lutfen kelimeyi giriniz: ");
-    scanf("%19s", dizi);
-
+    gets(dizi);
+    // scanf("%19s",dizi);
     int left = 0;
     int right = strlen(dizi) - 1;
 
@@ -272,6 +272,15 @@ void polindrom(){
     printf("Polindromdur");
 }
 
+void tersDizi(){
+    int dizi[]={45,87,59,23,54,68};
+    int len = sizeof(dizi)/sizeof(dizi[0])-1;
+    for(int i=len;0<=len;len--){
+        printf("%d ",dizi[len]);
+    }
+
+
+}
 
 int main()
 {
@@ -334,6 +343,9 @@ int main()
 
     // Soru19: Klavyeden girilen bir  yazının polindrom olup olmadığını bulan fonksiyonu yazınız.
     // polindrom();
+
+    // Soru20: Bir sayı dizisinde dizi elemanlarının sondan başa gelecek şekilde düzenlenmesini sağlayan programı yazınız.
+    tersDizi();
 
 
     return 0;

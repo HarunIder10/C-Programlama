@@ -254,10 +254,24 @@ void bolunebilme(){
 
 void polindrom(){
     char dizi[20];
-    printf("lutfen kelimeyi giriniz: ");
-    gets(dizi);
+    printf("Lutfen kelimeyi giriniz: ");
+    scanf("%19s", dizi);
 
+    int left = 0;
+    int right = strlen(dizi) - 1;
+
+    while(left < right){
+        if(dizi[left] != dizi[right]){
+            printf("Polindrom degildir");
+            return;
+        }
+        left++;
+        right--;
+    }
+
+    printf("Polindromdur");
 }
+
 
 int main()
 {
@@ -319,7 +333,7 @@ int main()
     // bolunebilme();
 
     // Soru19: Klavyeden girilen bir  yazının polindrom olup olmadığını bulan fonksiyonu yazınız.
-
+    // polindrom();
 
 
     return 0;

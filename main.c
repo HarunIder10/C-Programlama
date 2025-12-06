@@ -324,6 +324,22 @@ void transpoze(){
     }
 }
 
+void boyutCevirme(){
+    int sayac=0;
+    int cift[2][3]={{2,3,4},{6,8,9}};
+    int len=sizeof(cift)/sizeof(int);
+    int tek[len]={};
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            tek[sayac]=cift[i][j];
+            sayac++;
+        }
+    }
+    for(int i=0;i<6;i++){
+        printf("%d ",tek[i]);
+    }
+}
+
 int main()
 {
     // Soru1: kullanıcının girdiği sayının asal olup olmadığını bulan bir fonksiyon yazın sayı asal ise 1 değil ise 0 return etsin.
@@ -396,7 +412,10 @@ int main()
     // matris();
 
     // Soru23: [2x2] tipindeki bir kare matrisin transpozesini veren algoritmayı yazın.
-    transpoze();
+    // transpoze();
+
+    // Soru24: İki boyutlu diziyi tek boyutlu diziye çeviren algoritmayı yazınız.
+    boyutCevirme();
 
     return 0;
 }

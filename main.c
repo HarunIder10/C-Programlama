@@ -336,7 +336,7 @@ void boyutCevirme(){
         }
     }
     for(int i=0;i<6;i++){
-        printf("%d ",tek[i]);
+        printf("%d, ",tek[i]);
     }
 }
 
@@ -415,7 +415,8 @@ int main()
     // transpoze();
 
     // Soru24: İki boyutlu diziyi tek boyutlu diziye çeviren algoritmayı yazınız.
-    boyutCevirme();
+    // boyutCevirme();
+
 
     return 0;
 }
